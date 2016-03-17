@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		C3D5600A1C9A36810033F876 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D560091C9A36810033F876 /* main.m */; };
-		C3D5600D1C9A36810033F876 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D5600C1C9A36810033F876 /* AppDelegate.m */; };
+		C3D5600D1C9A36810033F876 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D5600C1C9A36810033F876 /* AppDelegate.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		C3D560101C9A36810033F876 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D5600F1C9A36810033F876 /* ViewController.m */; };
 		C3D560131C9A36810033F876 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3D560111C9A36810033F876 /* Main.storyboard */; };
 		C3D560151C9A36810033F876 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3D560141C9A36810033F876 /* Assets.xcassets */; };
 		C3D560181C9A36810033F876 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3D560161C9A36810033F876 /* LaunchScreen.storyboard */; };
 		C3D560231C9A36820033F876 /* AutomaticRefrenceCountTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D560221C9A36820033F876 /* AutomaticRefrenceCountTests.m */; };
 		C3D5602E1C9A36820033F876 /* AutomaticRefrenceCountUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D5602D1C9A36820033F876 /* AutomaticRefrenceCountUITests.m */; };
+		C3D5603D1C9A407D0033F876 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D5603C1C9A407D0033F876 /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		C3D560291C9A36820033F876 /* AutomaticRefrenceCountUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutomaticRefrenceCountUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3D5602D1C9A36820033F876 /* AutomaticRefrenceCountUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutomaticRefrenceCountUITests.m; sourceTree = "<group>"; };
 		C3D5602F1C9A36820033F876 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3D5603B1C9A407D0033F876 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		C3D5603C1C9A407D0033F876 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				C3D560161C9A36810033F876 /* LaunchScreen.storyboard */,
 				C3D560191C9A36820033F876 /* Info.plist */,
 				C3D560081C9A36810033F876 /* Supporting Files */,
+				C3D5603B1C9A407D0033F876 /* SecondViewController.h */,
+				C3D5603C1C9A407D0033F876 /* SecondViewController.m */,
 			);
 			path = AutomaticRefrenceCount;
 			sourceTree = "<group>";
@@ -270,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3D5603D1C9A407D0033F876 /* SecondViewController.m in Sources */,
 				C3D560101C9A36810033F876 /* ViewController.m in Sources */,
 				C3D5600D1C9A36810033F876 /* AppDelegate.m in Sources */,
 				C3D5600A1C9A36810033F876 /* main.m in Sources */,

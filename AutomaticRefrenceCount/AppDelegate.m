@@ -5,7 +5,7 @@
 //  Created by DivTao on 16/3/17.
 //  Copyright © 2016年 HT. All rights reserved.
 //
-
+#import "ViewController.h"
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
@@ -17,6 +17,23 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    /*
+    //测试自动引用计数
+    NSObject *object = [[NSObject alloc] init];
+    NSLog(@"Refrence Count = %lu", [object retainCount]);
+    NSObject * another = [object retain];
+    NSLog(@"Refrence Count = %lu", [object retainCount]);
+    [another release];
+    NSLog(@"Refrence Count = %lu", [object retainCount]);
+    [object release];
+    //这样再次输出是不可取得，有可能会造成程序的异常崩溃。
+    NSLog(@"Refrence Count = %lu", [object retainCount]);
+    */
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    [self.window makeKeyAndVisible];
+    ViewController * rootVC = [[ViewController alloc] init];
+    self.window.rootViewController = rootVC;
     return YES;
 }
 
